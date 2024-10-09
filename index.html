@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Trial</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Currency Converter</h2>
+
+        <form action="" class="container-form">
+
+            <input type="text" value="1">
+    
+            <div class="container2">
+
+                <div class="container-select">
+        
+                    <img src="https://flagsapi.com/US/flat/48.png" alt="flag" id="flag-img-from">
+        
+                    <select name="from" id="container-select-from">
+                        <option value="">USD</option>
+                        <option value="">NPR</option>
+                        <option value="">EUR</option>
+        
+                    </select>
+                </div>
+        
+                <i class="fa-solid fa-right-left" id="swap-icon"></i>
+
+                <div class="container-select">
+        
+                    <img src="https://flagsapi.com/NP/flat/48.png" alt="flag" id="flag-img-to">
+        
+                    <select name="to" id="container-select-to">
+                        <option value="">USD</option>
+                        <option value="" selected>NPR</option>
+                        <option value="">EUR</option>
+        
+                    </select>
+    
+                </div>
+
+            </div>          <!--container-2 end-->
+
+            <div class="container-exchange-rate-msg">
+                USD 1 = NPR 134
+            </div>
+
+            <button id="action-btn">Convert</button>
+
+        </form>
+        
+    </div>
+
+    <script src="countryList.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
